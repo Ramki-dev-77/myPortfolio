@@ -7,7 +7,7 @@ body{
 }
 .header{
     background-color: black;
-    box-shadow: 1px 1px 8px 0.5px;
+    box-shadow: 1px 1px 8px 5px red;
     height: max-content;
     color: white;
 }
@@ -80,10 +80,11 @@ nav li a:active{
 .skills{
     /* background: linear-gradient(rgb(227, 90, 66),rgb(194, 70, 70)); */
     background-color: black;
-    box-shadow: 1px 1px 8px 0.5px;
+    box-shadow: 1px 1px 10px 5px red;
     height: max-content;
     margin-top: 35px;
     color: white;
+    margin-bottom: 25px;
 }
 .skills-holder ul li{
     font-size: 30px;
@@ -99,10 +100,9 @@ nav li a:active{
     padding: 10px;
 }
 .skills-holder h1{
-    font-family: 'Times New Roman', Times, serif;
     letter-spacing: 1.5px;
     padding: 30px 30px 0px 30px;
-    font-size: 30px;
+    /* font-size: 30px; */
 }
 #ramki:hover{
     color: rgb(0, 255, 191);
@@ -116,12 +116,12 @@ nav li a:active{
 .interest{
     background-color: black;
     color: white;
-    box-shadow: 1px 1px 8px 0.5px;
+    box-shadow: 1px 1px 10px 5px red;
     height: 400px;
+    margin-bottom: 25px;
 }
 .interest h1{
     padding: 20px;
-    font-family: 'Times New Roman', Times, serif;
     letter-spacing: 0.5px;
 }
 .interest-holder{
@@ -142,7 +142,8 @@ nav li a:active{
     height: max-content;
     background-color: black;
     color: white;
-    box-shadow: 1px 1px 8px 0.5px;
+    box-shadow: 1px 1px 10px 5px red;
+    margin-bottom: 25px;
 }
 .project-container h1{
     color: white;
@@ -174,7 +175,7 @@ nav li a:active{
     height: max-content;
     background-color: black;
     color: white;
-    box-shadow: 1px 1px 8px 0.5px;
+    box-shadow: 1px 1px 10px 5px red;
 }
 .contact-holder{
     display :flex;
@@ -190,12 +191,12 @@ nav li a:active{
     padding: 30px 30px 0px 30px;
 }
 .contact-holder p{
-    color: white;
+    /* color: white; */
     padding: 0px 40px 0px 40px;
     font-size: 22px;
 }
 .contact-holder a{
-    text-decoration: none;
+    /* text-decoration:dashed; */
 }
 section h1{
     text-align: center;
@@ -332,5 +333,14 @@ section h1{
         margin-right: auto;
         align-items: center;
         
+    }
+}
+@media(max-width : 380px){
+    .skills-holder ul{
+        padding: 0%;
+        padding-left: 10px;
+    }
+    .skills-holder ul li{
+        font-size: 16px;
     }
 }
