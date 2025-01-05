@@ -1,0 +1,311 @@
+body{
+    margin : 0;
+    padding: 25px;
+    font-family: 'Times New Roman', Times, serif;
+   background-color:rgb(31, 32, 33);
+   scroll-behavior: auto;
+}
+.header{
+    background-color: black;
+    box-shadow: 1px 1px 8px 0.5px;
+    height: max-content;
+    color: white;
+}
+nav{
+    padding-top: 10px;
+}
+nav ul{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+nav ul a{
+    padding-right: 20px;
+    font-size: 20px;
+    color: white;
+}
+nav li{
+    height: 50px;
+    list-style: none;
+}
+nav ul a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.aboutMe-holder{
+    color: white;
+    border: 2px solid;
+    width: max-content;
+    font-size: larger;
+    text-align: left;
+}
+.image-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.image-holder img{
+    border-radius: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.image-holder h3{
+    color: white;
+}
+.image-holder h3:hover{
+    color: rgba(0, 0, 255, 0.751);
+}
+.image-holder img:hover{
+    border-radius: 100px;
+    transition: ease-in-out 1s;
+}
+nav li a:hover{
+    opacity: 0.6;
+}
+nav li a:active{
+    font-size: 18px;
+}
+.skills{
+    /* background: linear-gradient(rgb(227, 90, 66),rgb(194, 70, 70)); */
+    background-color: black;
+    box-shadow: 1px 1px 8px 0.5px;
+    height: max-content;
+    margin-top: 35px;
+    color: white;
+}
+.skills-holder ul li{
+    font-size: 30px;
+    list-style: none;
+}
+
+.skills-holder ul{
+    padding-left: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    padding-bottom: 20px;
+}
+.skills-holder ul li{
+    padding: 10px;
+}
+.skills-holder h1{
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1.5px;
+    padding: 30px 30px 0px 30px;
+    font-size: 30px;
+}
+#ramki:hover{
+    color: rgb(0, 255, 191);
+    cursor: none;
+}
+.skills-holder li{
+    display: flex;
+    flex-wrap: wrap;
+}
+.interest{
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 8px 0.5px;
+    height: 400px;
+}
+.interest h1{
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 0.5px;
+}
+.interest-holder{
+    display: flex;
+    justify-content: space-around;
+}
+.extra-curricular{
+    border: 5px solid rgb(255, 255, 255);
+    padding: 20px;
+    width: max-content;
+}
+.study-interest{
+    border: 5px solid rgb(255, 255, 255);
+    padding: 20px;
+    width: max-content;
+}
+.project-container{
+    height: max-content;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 8px 0.5px;
+}
+.project-container h1{
+    color: white;
+    padding: 20px;
+}
+.project-ul{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.project-ul li{
+    list-style: none;
+}
+.project-list{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.project-container table,tr,td,th{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border: 2px solid white;
+}
+.myName h1{
+    text-align: center;
+    font-size: 40px;
+}
+.testimonials{
+    height: max-content;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 8px 0.5px;
+}
+.contact-holder{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.testimonials h1{
+    padding: 30px;
+}
+.contact-holder img{
+    padding: 30px 30px 0px 30px;
+}
+.contact-holder p{
+    color: white;
+    padding: 0px 40px 0px 40px;
+    font-size: 22px;
+}
+.contact-holder a{
+    text-decoration: none;
+}
+section h1{
+    text-align: center;
+}
+@media(max-width : 900px){
+    .skills-holder ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-left: 100px;
+}
+}
+@media(max-width : 500px)
+{
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .skills-holder ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 300px;
+        padding: 0px;
+        padding-bottom: 10px;
+    }
+    .aboutMe-holder{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .header{
+        height : max-content;
+        width: auto;
+    }
+    .header nav ul a{
+        overflow: scroll;
+    }
+    .skills{
+        height : max-content;
+        width: auto;
+    }
+    .skills-holder ul{
+        padding-left: 15px;
+    }
+    .project-list{
+        padding-bottom: 20px;
+    }
+    .contact-holder{
+        flex-direction: column;
+    }
+    .contact-holder img{
+        /* display: none; */
+        height: 50px;
+        width: 50px;
+    }
+    .contact-holder a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header nav{
+        border-bottom: 1px solid white;
+    }
+    .image-holder{
+        padding-bottom: 20px;
+    }
+    .myName h1{
+        font-size: 30px;
+    }
+    .project-list table,td,tr{
+        font-size: 16px;
+    }
+    .interest-holder{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;
+    }
+    .interest{
+        height: max-content;
+        padding: 0px 0px 15px 0px;
+    }
+    .study-interest{
+        width: auto;
+    }
+    nav ul a{
+        font-size: 15px;
+    }
+    nav li{
+        height: 30px;
+    }
+}
+@media(max-width : 400px)
+{
+    
+    .image-holder{
+        padding-bottom: 20px;
+    }
+    .myName h1{
+        font-size: 25px;
+    }
+    
+}
+@media(max-width : 830px){
+    .contact-holder img{
+        display: none;
+    }
+    .contact-holder{
+        display: grid;
+    }
+}
